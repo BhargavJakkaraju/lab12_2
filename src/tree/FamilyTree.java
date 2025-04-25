@@ -38,10 +38,10 @@ public class FamilyTree {
             // No, recurse. Check all children of this node.
             for (TreeNode child: children)
             {
-                TreeNode node = getNodeWithName(targetName);
+                child = getNodeWithName(targetName);
 
-                if (node != null) {
-                    return node;
+                if (child != null) {
+                    return child;
                 }
 
                 // If child.getNodeWithName(targetName) returns a non-null node,
